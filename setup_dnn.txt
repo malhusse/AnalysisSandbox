@@ -1,0 +1,28 @@
+
+Hi Raffaele,
+
+The inputs I use are
+
+dimuon_pt
+dimuon_eta
+abs(dimuon_deta)
+abs(dimuon_dphi)
+jet1_eta
+jet2_eta
+nCentJets
+nJets
+mjj_1
+mjj_2
+abs(detajj_1)
+abs(detajj_2)
+nBTagJets (medium working point)
+metPT
+
+dimuon is muon pair with highest pt
+jet pair are jet pairs with highest mass
+
+also I use mjj_* = 0 and abs(detajj_*) = -1 if the jet pair doesn't exist
+
+
+TMVA::READER::BookMVA("DNN","factory_DNN.weights.xml")
+
